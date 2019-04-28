@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestData>
+	<DataSet>
+		<Data>
+			<FacilityName>Poland family unit</FacilityName>
+			<ConfigurationName>Sasuke Calculation</ConfigurationName>-->
+			<!--<ConfigurationName>calculationsMultiple@spk</ConfigurationName>-->
+			<Impersonation>103645</Impersonation>
+		</Data>
+		<!--<CalculationVaraibles>
+		<CalculatedParameter>Operating Energy Use (calculated) (kW)</CalculatedParameter>
+		<Variable>Design Voltage (V),Phase 1 Current (A),Phase 3 Current (A),Phase 2 Current (A)</Variable>
+		<Reading>9,5,56,60</Reading>
+		<Output>0.63</Output>
+	</CalculationVaraibles>-->
+		<CalculationVaraibles>
+			<CalculatedParameter>TSS Removal (calculated) (%)</CalculatedParameter>
+			<Variable>DEAE (ppm),Flocculant 2 Dosage (ppm)</Variable>
+			<Reading>200,100</Reading>
+			<Output>50.00</Output>
+		</CalculationVaraibles>
+	</DataSet>
+	<DataSet>
+		<Data>
+			<FacilityName>Poland family unit</FacilityName>
+			<ConfigurationName>Configuration 11-30-2016 drag test for the configuration 11 30 30216 to verify the maximum configura</ConfigurationName>
+			<Impersonation>103645</Impersonation>
+		</Data>
+		<CalculationVaraibles>
+			<CalculatedParameter>Operating Energy Use (calculated) (kW)</CalculatedParameter>
+			<Variable>Design Voltage (V),Phase 1 Current (A),Phase 3 Current (A),Phase 2 Current (A)</Variable>
+			<Reading>9,5,56,60</Reading>
+			<Output>0.63</Output>
+		</CalculationVaraibles>
+	</DataSet>
+</TestData>

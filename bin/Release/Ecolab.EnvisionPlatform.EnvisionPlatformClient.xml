@@ -1,0 +1,2759 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ecolab.EnvisionPlatform.EnvisionPlatformClient</name>
+    </assembly>
+    <members>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations">
+            <summary>
+            AssessmentOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.#ctor(Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi)">
+            <summary>
+            Initializes a new instance of the AssessmentOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.Client">
+            <summary>
+            Gets a reference to the EnvisionPlatformApi
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.GetAssessmentWithHttpMessagesAsync(System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get an existing Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment to get.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.CreateAssessmentWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Create a new assessment.
+            </summary>
+            <param name='assessment'>
+            The assessment to create.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.UpdateAssessmentWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Update an Assessment.
+            </summary>
+            <param name='assessment'>
+            The assessment to update.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.GetAttachmentWithHttpMessagesAsync(System.Guid,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get an attachment for the specified Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.ReplaceAttachmentWithHttpMessagesAsync(System.Guid,System.String,System.Guid,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Replace the contents of an attachment for the specified Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperations.CreateAttachmentWithHttpMessagesAsync(System.Guid,System.String,System.Guid,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Create an attachment for the specified Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions">
+            <summary>
+            Extension methods for AssessmentOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.GetAssessment(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid)">
+            <summary>
+            Get an existing Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment to get.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.GetAssessmentAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Get an existing Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment to get.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.CreateAssessment(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment)">
+            <summary>
+            Create a new assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessment'>
+            The assessment to create.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.CreateAssessmentAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment,System.Threading.CancellationToken)">
+            <summary>
+            Create a new assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessment'>
+            The assessment to create.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.UpdateAssessment(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment)">
+            <summary>
+            Update an Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessment'>
+            The assessment to update.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.UpdateAssessmentAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment,System.Threading.CancellationToken)">
+            <summary>
+            Update an Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessment'>
+            The assessment to update.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.GetAttachment(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid,System.String,System.Guid)">
+            <summary>
+            Get an attachment for the specified Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.GetAttachmentAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid,System.String,System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Get an attachment for the specified Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.ReplaceAttachment(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid,System.String,System.Guid,System.Byte[])">
+            <summary>
+            Replace the contents of an attachment for the specified Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.ReplaceAttachmentAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid,System.String,System.Guid,System.Byte[],System.Threading.CancellationToken)">
+            <summary>
+            Replace the contents of an attachment for the specified Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.CreateAttachment(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid,System.String,System.Guid,System.Byte[])">
+            <summary>
+            Create an attachment for the specified Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.AssessmentOperationsExtensions.CreateAttachmentAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations,System.Guid,System.String,System.Guid,System.Byte[],System.Threading.CancellationToken)">
+            <summary>
+            Create an attachment for the specified Assessment.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperations">
+            <summary>
+            BaseApiOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperations.#ctor(Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi)">
+            <summary>
+            Initializes a new instance of the BaseApiOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperations.Client">
+            <summary>
+            Gets a reference to the EnvisionPlatformApi
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperations.GetVersionWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperations.GetUserWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperations.WhoAmIWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperationsExtensions">
+            <summary>
+            Extension methods for BaseApiOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperationsExtensions.GetVersion(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperationsExtensions.GetVersionAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperationsExtensions.GetUser(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations,System.Nullable{System.Int32})">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperationsExtensions.GetUserAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperationsExtensions.WhoAmI(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.BaseApiOperationsExtensions.WhoAmIAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ComponentOperations">
+            <summary>
+            ComponentOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ComponentOperations.#ctor(Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi)">
+            <summary>
+            Initializes a new instance of the ComponentOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ComponentOperations.Client">
+            <summary>
+            Gets a reference to the EnvisionPlatformApi
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ComponentOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Component.Survey,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Saves the specified Survey data.
+            </summary>
+            <param name='surveyData'>
+            The Survey data.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ComponentOperationsExtensions">
+            <summary>
+            Extension methods for ComponentOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ComponentOperationsExtensions.Save(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IComponentOperations,Ecolab.EnvisionPlatform.Library.Model.Component.Survey)">
+            <summary>
+            Saves the specified Survey data.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='surveyData'>
+            The Survey data.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ComponentOperationsExtensions.SaveAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IComponentOperations,Ecolab.EnvisionPlatform.Library.Model.Component.Survey,System.Threading.CancellationToken)">
+            <summary>
+            Saves the specified Survey data.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='surveyData'>
+            The Survey data.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi">
+            <summary>
+            https://github.com/Azure/autorest/issues/930 (Make Credentials optional #930)
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.Credentials">
+            <summary>
+            Credentials needed for the client to connect to Azure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.AcceptLanguage">
+            <summary>
+            Gets or sets the preferred language for the response.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.LongRunningOperationRetryTimeout">
+            <summary>
+            Gets or sets the retry timeout in seconds for Long Running Operations.
+            Default value is 30.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.GenerateClientRequestId">
+            <summary>
+            When set to true a unique x-ms-client-request-id value is generated and
+            included in each request. Default is true.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.Assessment">
+            <summary>
+            Gets the IAssessmentOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.BaseApi">
+            <summary>
+            Gets the IBaseApiOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.Component">
+            <summary>
+            Gets the IComponentOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.Mde">
+            <summary>
+            Gets the IMdeOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.Sync">
+            <summary>
+            Gets the ISyncOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.Tco">
+            <summary>
+            Gets the ITcoOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.UsageTracking">
+            <summary>
+            Gets the IUsageTrackingOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='credentials'>
+            Required. Credentials needed for the client to connect to Azure.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='credentials'>
+            Required. Credentials needed for the client to connect to Azure.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='credentials'>
+            Required. Credentials needed for the client to connect to Azure.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the EnvisionPlatformApi class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='credentials'>
+            Required. Credentials needed for the client to connect to Azure.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi.Initialize">
+            <summary>
+            Initializes client properties.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations">
+            <summary>
+            AssessmentOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations.GetAssessmentWithHttpMessagesAsync(System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get an existing Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment to get.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations.CreateAssessmentWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Create a new assessment.
+            </summary>
+            <param name='assessment'>
+            The assessment to create.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations.UpdateAssessmentWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Update an Assessment.
+            </summary>
+            <param name='assessment'>
+            The assessment to update.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations.GetAttachmentWithHttpMessagesAsync(System.Guid,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get an attachment for the specified Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations.ReplaceAttachmentWithHttpMessagesAsync(System.Guid,System.String,System.Guid,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Replace the contents of an attachment for the specified Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IAssessmentOperations.CreateAttachmentWithHttpMessagesAsync(System.Guid,System.String,System.Guid,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Create an attachment for the specified Assessment.
+            </summary>
+            <param name='assessmentId'>
+            The ID of the Assessment the attachment is attached to.
+            </param>
+            <param name='extension'>
+            The file extension of the attachment.
+            </param>
+            <param name='attachmentId'>
+            The ID of the attachment.
+            </param>
+            <param name='content'>
+            The content of the attachment.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations">
+            <summary>
+            BaseApiOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations.GetVersionWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations.GetUserWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IBaseApiOperations.WhoAmIWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IComponentOperations">
+            <summary>
+            ComponentOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IComponentOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Component.Survey,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Saves the specified Survey data.
+            </summary>
+            <param name='surveyData'>
+            The Survey data.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.Credentials">
+            <summary>
+            Credentials needed for the client to connect to Azure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.AcceptLanguage">
+            <summary>
+            Gets or sets the preferred language for the response.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.LongRunningOperationRetryTimeout">
+            <summary>
+            Gets or sets the retry timeout in seconds for Long Running
+            Operations. Default value is 30.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.GenerateClientRequestId">
+            <summary>
+            When set to true a unique x-ms-client-request-id value is
+            generated and included in each request. Default is true.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.Assessment">
+            <summary>
+            Gets the IAssessmentOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.BaseApi">
+            <summary>
+            Gets the IBaseApiOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.Component">
+            <summary>
+            Gets the IComponentOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.Mde">
+            <summary>
+            Gets the IMdeOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.Sync">
+            <summary>
+            Gets the ISyncOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.Tco">
+            <summary>
+            Gets the ITcoOperations.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IEnvisionPlatformApi.UsageTracking">
+            <summary>
+            Gets the IUsageTrackingOperations.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations">
+            <summary>
+            MdeOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.GetFacilitiesWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.GetConfigurationsWithHttpMessagesAsync(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.GetMdeSetupsByFacilityIdsWithHttpMessagesAsync(System.Collections.Generic.IList{System.Nullable{System.Int32}},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityIds'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.GetAllConfigurationsWithHttpMessagesAsync(System.Collections.Generic.IList{System.Nullable{System.Int32}},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityIds'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.GetMdeSetupWithHttpMessagesAsync(System.Int32,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityId'>
+            </param>
+            <param name='configId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.GetReadingsWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            TFS 5212 Sync data from DocumentDB to OnPrem - Create API to read
+            from Document DB
+            This is the endpoint to communicate service for fetching all
+            documents from Reading collection.
+            </summary>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.SaveReadingsWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='readingCollection'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.SaveMultipleReadingsWithHttpMessagesAsync(System.Collections.Generic.IList{Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection},System.Nullable{System.Boolean},System.Nullable{UnitOfMeasureType},System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='readingCollections'>
+            </param>
+            <param name='recalculate'>
+            </param>
+            <param name='unitOfMeasureType'>
+            Possible values include: 'US', 'Metric', 'USAndMetric'
+            </param>
+            <param name='configurationId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.GetUserWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations.WhoAmI2WithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ISyncOperations">
+            <summary>
+            SyncOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ISyncOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Save account details for the admin
+            </summary>
+            <param name='accountDetail'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ISyncOperations.RemoveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Remove account details for the admin
+            </summary>
+            <param name='accountDetail'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations">
+            <summary>
+            TcoOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetFacilitiesWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the facilities.
+            </summary>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetAssetsWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the assets.
+            </summary>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetOnlyAccountLocationWithHttpMessagesAsync(System.Nullable{System.Int64},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            It get the contextpoint if it is already mapped to the location
+            else it create and return back the contextpoint
+            </summary>
+            <param name='accountId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetLatestProjectsWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the latest projects.
+            </summary>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetRecentlyViewedWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get the Recently Viewed documents for the User
+            </summary>
+            <param name='impersonationUserId'>
+            The user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            Last Sync DateTime.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.SaveRecentlyViewedWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Save RecentlyViewed Details
+            </summary>
+            <param name='recentlyViewed'>
+            RecentlyViewed Object
+            </param>
+            <param name='impersonationUserId'>
+            impersonationUserId
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Saves the specified project version.
+            </summary>
+            <param name='projectVersion'>
+            The project version.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetAllCurrenciesWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets all currencies.
+            </summary>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetSearchTextWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Search the text and it will return the data
+            </summary>
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations.GetUserWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IUsageTrackingOperations">
+            <summary>
+            UsageTrackingOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.IUsageTrackingOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tracking.UsageTracking,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='usageTracking'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations">
+            <summary>
+            MdeOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.#ctor(Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi)">
+            <summary>
+            Initializes a new instance of the MdeOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.Client">
+            <summary>
+            Gets a reference to the EnvisionPlatformApi
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.GetFacilitiesWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.GetConfigurationsWithHttpMessagesAsync(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.GetMdeSetupsByFacilityIdsWithHttpMessagesAsync(System.Collections.Generic.IList{System.Nullable{System.Int32}},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityIds'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.GetAllConfigurationsWithHttpMessagesAsync(System.Collections.Generic.IList{System.Nullable{System.Int32}},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityIds'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.GetMdeSetupWithHttpMessagesAsync(System.Int32,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='facilityId'>
+            </param>
+            <param name='configId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.GetReadingsWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            TFS 5212 Sync data from DocumentDB to OnPrem - Create API to read from
+            Document DB
+            This is the endpoint to communicate service for fetching all documents
+            from Reading collection.
+            </summary>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.SaveReadingsWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='readingCollection'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.SaveMultipleReadingsWithHttpMessagesAsync(System.Collections.Generic.IList{Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection},System.Nullable{System.Boolean},System.Nullable{UnitOfMeasureType},System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='readingCollections'>
+            </param>
+            <param name='recalculate'>
+            </param>
+            <param name='unitOfMeasureType'>
+            Possible values include: 'US', 'Metric', 'USAndMetric'
+            </param>
+            <param name='configurationId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.GetUserWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperations.WhoAmI2WithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions">
+            <summary>
+            Extension methods for MdeOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetFacilities(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.String,System.String)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetFacilitiesAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.String,System.String,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetConfigurations(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Int32)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetConfigurationsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Int32,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetMdeSetupsByFacilityIds(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Collections.Generic.IList{System.Nullable{System.Int32}})">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityIds'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetMdeSetupsByFacilityIdsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Collections.Generic.IList{System.Nullable{System.Int32}},System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityIds'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetAllConfigurations(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Collections.Generic.IList{System.Nullable{System.Int32}})">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityIds'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetAllConfigurationsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Collections.Generic.IList{System.Nullable{System.Int32}},System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityIds'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetMdeSetup(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Int32,System.Int32)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityId'>
+            </param>
+            <param name='configId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetMdeSetupAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='facilityId'>
+            </param>
+            <param name='configId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetReadings(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations)">
+            <summary>
+            TFS 5212 Sync data from DocumentDB to OnPrem - Create API to read from
+            Document DB
+            This is the endpoint to communicate service for fetching all documents
+            from Reading collection.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetReadingsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Threading.CancellationToken)">
+            <summary>
+            TFS 5212 Sync data from DocumentDB to OnPrem - Create API to read from
+            Document DB
+            This is the endpoint to communicate service for fetching all documents
+            from Reading collection.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.SaveReadings(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='readingCollection'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.SaveReadingsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='readingCollection'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.SaveMultipleReadings(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Collections.Generic.IList{Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection},System.Nullable{System.Boolean},System.Nullable{UnitOfMeasureType},System.Nullable{System.Int32})">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='readingCollections'>
+            </param>
+            <param name='recalculate'>
+            </param>
+            <param name='unitOfMeasureType'>
+            Possible values include: 'US', 'Metric', 'USAndMetric'
+            </param>
+            <param name='configurationId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.SaveMultipleReadingsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Collections.Generic.IList{Ecolab.EnvisionPlatform.Library.Model.Mde.ReadingCollection},System.Nullable{System.Boolean},System.Nullable{UnitOfMeasureType},System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='readingCollections'>
+            </param>
+            <param name='recalculate'>
+            </param>
+            <param name='unitOfMeasureType'>
+            Possible values include: 'US', 'Metric', 'USAndMetric'
+            </param>
+            <param name='configurationId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetUser(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Nullable{System.Int32})">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.GetUserAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.WhoAmI2(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.MdeOperationsExtensions.WhoAmI2Async(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IMdeOperations,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperations">
+            <summary>
+            SyncOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperations.#ctor(Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi)">
+            <summary>
+            Initializes a new instance of the SyncOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperations.Client">
+            <summary>
+            Gets a reference to the EnvisionPlatformApi
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Save account details for the admin
+            </summary>
+            <param name='accountDetail'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperations.RemoveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Remove account details for the admin
+            </summary>
+            <param name='accountDetail'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperationsExtensions">
+            <summary>
+            Extension methods for SyncOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperationsExtensions.Save(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ISyncOperations,Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount)">
+            <summary>
+            Save account details for the admin
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='accountDetail'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperationsExtensions.SaveAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ISyncOperations,Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount,System.Threading.CancellationToken)">
+            <summary>
+            Save account details for the admin
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='accountDetail'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperationsExtensions.Remove(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ISyncOperations,Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount)">
+            <summary>
+            Remove account details for the admin
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='accountDetail'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.SyncOperationsExtensions.RemoveAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ISyncOperations,Ecolab.EnvisionPlatform.Library.Model.Sync.AppSyncAccount,System.Threading.CancellationToken)">
+            <summary>
+            Remove account details for the admin
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='accountDetail'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations">
+            <summary>
+            TcoOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.#ctor(Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi)">
+            <summary>
+            Initializes a new instance of the TcoOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.Client">
+            <summary>
+            Gets a reference to the EnvisionPlatformApi
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetFacilitiesWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the facilities.
+            </summary>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetAssetsWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the assets.
+            </summary>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetOnlyAccountLocationWithHttpMessagesAsync(System.Nullable{System.Int64},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            It get the contextpoint if it is already mapped to the location else it
+            create and return back the contextpoint
+            </summary>
+            <param name='accountId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetLatestProjectsWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the latest projects.
+            </summary>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetRecentlyViewedWithHttpMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get the Recently Viewed documents for the User
+            </summary>
+            <param name='impersonationUserId'>
+            The user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            Last Sync DateTime.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.SaveRecentlyViewedWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Save RecentlyViewed Details
+            </summary>
+            <param name='recentlyViewed'>
+            RecentlyViewed Object
+            </param>
+            <param name='impersonationUserId'>
+            impersonationUserId
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Saves the specified project version.
+            </summary>
+            <param name='projectVersion'>
+            The project version.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetAllCurrenciesWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets all currencies.
+            </summary>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetSearchTextWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Search the text and it will return the data
+            </summary>
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperations.GetUserWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='impersonationUserId'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions">
+            <summary>
+            Extension methods for TcoOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetFacilities(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            Gets the facilities.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetFacilitiesAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            Gets the facilities.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetAssets(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            Gets the assets.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetAssetsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            Gets the assets.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetOnlyAccountLocation(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int64})">
+            <summary>
+            It get the contextpoint if it is already mapped to the location else it
+            create and return back the contextpoint
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='accountId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetOnlyAccountLocationAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int64},System.Threading.CancellationToken)">
+            <summary>
+            It get the contextpoint if it is already mapped to the location else it
+            create and return back the contextpoint
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='accountId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetLatestProjects(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            Gets the latest projects.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetLatestProjectsAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            Gets the latest projects.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            The last synchronize date.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetRecentlyViewed(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            Get the Recently Viewed documents for the User
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            Last Sync DateTime.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetRecentlyViewedAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            Get the Recently Viewed documents for the User
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            The user identifier.
+            </param>
+            <param name='lastSyncDate'>
+            Last Sync DateTime.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.SaveRecentlyViewed(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed,System.Nullable{System.Int32})">
+            <summary>
+            Save RecentlyViewed Details
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='recentlyViewed'>
+            RecentlyViewed Object
+            </param>
+            <param name='impersonationUserId'>
+            impersonationUserId
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.SaveRecentlyViewedAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Save RecentlyViewed Details
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='recentlyViewed'>
+            RecentlyViewed Object
+            </param>
+            <param name='impersonationUserId'>
+            impersonationUserId
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.Save(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion,System.Nullable{System.Int32})">
+            <summary>
+            Saves the specified project version.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectVersion'>
+            The project version.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.SaveAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Saves the specified project version.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectVersion'>
+            The project version.
+            </param>
+            <param name='impersonationUserId'>
+            The impersonation user identifier.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetAllCurrencies(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations)">
+            <summary>
+            Gets all currencies.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetAllCurrenciesAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Threading.CancellationToken)">
+            <summary>
+            Gets all currencies.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetSearchText(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Search the text and it will return the data
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetSearchTextAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Search the text and it will return the data
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='searchTerm'>
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetUser(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32})">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.TcoOperationsExtensions.GetUserAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.ITcoOperations,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='impersonationUserId'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.UsageTrackingOperations">
+            <summary>
+            UsageTrackingOperations operations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.UsageTrackingOperations.#ctor(Ecolab.EnvisionPlatform.EnvisionPlatformClient.EnvisionPlatformApi)">
+            <summary>
+            Initializes a new instance of the UsageTrackingOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.EnvisionPlatformClient.UsageTrackingOperations.Client">
+            <summary>
+            Gets a reference to the EnvisionPlatformApi
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.UsageTrackingOperations.SaveWithHttpMessagesAsync(Ecolab.EnvisionPlatform.Library.Model.Tracking.UsageTracking,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <param name='usageTracking'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.EnvisionPlatformClient.UsageTrackingOperationsExtensions">
+            <summary>
+            Extension methods for UsageTrackingOperations.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.UsageTrackingOperationsExtensions.Save(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IUsageTrackingOperations,Ecolab.EnvisionPlatform.Library.Model.Tracking.UsageTracking)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='usageTracking'>
+            </param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.EnvisionPlatformClient.UsageTrackingOperationsExtensions.SaveAsync(Ecolab.EnvisionPlatform.EnvisionPlatformClient.IUsageTrackingOperations,Ecolab.EnvisionPlatform.Library.Model.Tracking.UsageTracking,System.Threading.CancellationToken)">
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='usageTracking'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+    </members>
+</doc>

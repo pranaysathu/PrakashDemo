@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LoginData>
+	<Data>
+		<UserRole>Admin</UserRole>
+		<UserMail>pranay.sathu@ecolab.com</UserMail>
+		<UserID>sathupr</UserID>
+		<Password>VQB6AHUAbQBhAGsAaQA1ADUAJAA=</Password>
+	</Data>
+	<Data>
+		<UserRole>Sales</UserRole>
+		<UserMail>prasad.mailapalli@ecolab.com</UserMail>
+		<UserID>mailapr</UserID>
+		<Password>RQBwAGEAbQAmADEAMgAzADQA</Password>
+	</Data>
+	<Data>
+		<UserRole>ApiUser</UserRole>
+		<UserMail>prasad.mailapalli@ecolab.com</UserMail>
+		<UserID>mailapr</UserID>
+		<Password>RQBwAGEAbQAmADEAMgAzADQA</Password>
+	</Data>
+	<ApiData>
+		<UserMail>pranay.sathu@ecolab.com</UserMail>
+		<Password>VQB6AHUAbQBhAGsAaQA1ADUAJAA=</Password>
+		<AuthURL>https://login.microsoftonline.com/nalco.microsoftonline.com</AuthURL>
+		<ResourceID>ffe7fb45-90c4-4a06-bb82-5f086341ce3d</ResourceID>
+		<ClientID>1e1dc578-618d-478e-9215-7a5caa1f2718</ClientID>
+		<WebApi>https://eclwpsenvisionapi-trunk.azurewebsites.net/api/v1/Mde/Readings</WebApi>
+	</ApiData>
+</LoginData>

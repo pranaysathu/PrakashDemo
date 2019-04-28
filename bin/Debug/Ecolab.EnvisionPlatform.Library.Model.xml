@@ -1,0 +1,3629 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ecolab.EnvisionPlatform.Library.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Component.Survey">
+            <summary>
+            A Class  that represents the Survey Client Model.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Component.Survey"/> class.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.CheckListId">
+            <summary>
+            Gets or sets the check list identifier.
+            </summary>
+            <value>
+            The check list identifier.
+            </value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.AppId">
+            <summary>
+            Gets or sets the application identifier.
+            </summary>
+            <value>
+            The application identifier.
+            </value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.EntityId">
+            <summary>
+            Gets or sets the entity identifier.
+            </summary>
+            <value>
+            In Case of Erb it will have ReportId.
+            </value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.FacilityIds">
+            <summary>
+            Gets or sets the facility ids.
+            </summary>
+            <value>
+            The facility ids.
+            </value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.Systems">
+            <summary>
+            Gets or sets the system Collection.
+            </summary>
+            <value>
+            The systems.
+            </value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.ServiceOrderRequest">
+            <summary>
+            Gets or sets the service order request No.
+            </summary>
+            <value>
+            The service order request.
+            </value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.Questions">
+            <summary>
+            Gets or sets the question Collection.
+            </summary>
+            <value>
+            The questions Collection.
+            </value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.CreatedOn">
+            <summary>
+            Gets or sets the created on.
+            </summary>
+            <value>
+            The created on.
+            </value>
+            <remarks> When this Data is stored in Nalco Tag then CreatedOn will be null. 
+            On Publish we will add the created date.
+            </remarks>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.Survey.CreatedBy">
+            <summary>
+            Gets or sets the created by.
+            </summary>
+            <value>
+            The created by.
+            </value>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyAnswer">
+            <summary>
+            A Class that represents the Survey Answer.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyAnswer.NumericAnswer">
+            <summary>
+            Gets or Sets a Numeric Answer.
+            </summary>
+            <remarks>
+            If Question Type is Number then then Answer will be stored. 
+            If Question Type is not a Number then the Answer Id will be store and the Aswer 
+            will be store in respective answer i.e. StringAnswer / DateAnswer or Other Answer.
+            </remarks>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyAnswer.StringAnswer">
+            <summary>
+            Gets or sets String Answer.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyAnswer.DateAnswer">
+            <summary>
+            Gets or sets Date Time Answer.
+            </summary>
+            <remarks>If the question is not DateTime type then it will nave null value</remarks>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyAnswer.TextAnswer">
+            <summary>
+            Gets or Sets Other Answer.
+            </summary>
+            <remarks>This will hold the value in case if the question is of type MultiResponse.
+            The text value will be stored here.
+            </remarks>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyQuestion">
+            <summary>
+            A class that represents the Survey Question Model.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyQuestion.QuestionId">
+            <summary>
+            Get or set QuestionId.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyQuestion.Answers">
+            <summary>
+            Get or set collection of Answer.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Component.SurveyQuestion.Type">
+            <summary>
+            Get or set Question Type.
+            </summary>
+            <value>
+            String = 1,
+            Date =2,
+            MultiResponse =3,
+            RadioButton =4,
+            Numeric =5
+            </value>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey">
+            <summary>
+            Class DimensionalUsageKey.
+            </summary>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.SubunitFraction">
+            <summary>
+            The subunit fraction
+            </summary>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.SubunitReciprocalVolume">
+            <summary>
+            The subunit reciprocal volume
+            </summary>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.SubunitAnnualRate">
+            <summary>
+            The subunit annual rate
+            </summary>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.SubunitEnergyCost">
+            <summary>
+            The subunit energy cost
+            </summary>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.mUsageKeys">
+            <summary>
+            The m usage keys
+            </summary>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.NalcoCoreAssembly">
+            <summary>
+            The nalco core assembly
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.UsageKeys">
+            <summary>
+            The list of <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey" />s that have been set for the running application.
+            </summary>
+            <value>The usage keys.</value>
+            <exception cref="T:System.InvalidOperationException">Missing call to " + nameof(DimensionalUsageKey) + "." + nameof(Init) + " at application startup.</exception>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.mUnit">
+            <summary>
+            The m unit
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.Unit">
+            <summary>
+            Gets or sets the unit.
+            </summary>
+            <value>The unit.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.mSubunits">
+            <summary>
+            Gets or sets the sub units.
+            </summary>
+            <value>The sub units.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.SubUnits">
+            <summary>
+            Gets or sets the sub units.
+            </summary>
+            <value>The sub units.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.mDefaultSubUnitUS">
+            <summary>
+            The m default sub unit us
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.DefaultSubUnitUS">
+            <summary>
+            Gets or sets the default sub unit us.
+            </summary>
+            <value>The default sub unit us.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.mDefaultSubUnitMetric">
+            <summary>
+            The m default sub unit metric
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.DefaultSubUnitMetric">
+            <summary>
+            Gets or sets the default sub unit metric.
+            </summary>
+            <value>The default sub unit metric.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.mUSDefaultSubUnit">
+            <summary>
+            The m us default sub unit
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.USDefaultSubUnit">
+            <summary>
+            Gets or sets the us default sub unit.
+            </summary>
+            <value>The us default sub unit.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.mMetricDefaultSubUnit">
+            <summary>
+            The m metric default sub unit
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.MetricDefaultSubUnit">
+            <summary>
+            Gets or sets the metric default sub unit.
+            </summary>
+            <value>The metric default sub unit.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.UnitType">
+            <summary>
+            The <see cref="T:System.Type" /> of the <see cref="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.Unit" />.
+            </summary>
+            <value>The type of the unit.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.SubunitEnumType">
+            <summary>
+            Gets the type of the subunit enum.
+            </summary>
+            <value>The type of the subunit enum.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey" /> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.#ctor(System.String,System.String,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit},System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey" /> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="unit">The unit.</param>
+            <param name="subUnits">The sub units.</param>
+            <param name="usDefaultSubUnit">The us default sub unit.</param>
+            <param name="metricDefaultSubUnit">The metric default sub unit.</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.Init(System.String)">
+            <summary>
+            Initializes using the specified JSON.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>List{DimensionalUsageKey}.</returns>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.Init(System.Reflection.Assembly,System.String)">
+            <summary>
+            Initializes using the specified assembly resource.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <param name="resourceName">Name of the resource.</param>
+            <returns>List{DimensionalUsageKey}.</returns>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey.Init">
+            <summary>
+            Initializes for default TCO.
+            </summary>
+            <returns>List{DimensionalUsageKey}.</returns>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SimpleConflictSubunitSpec">
+            <summary>
+            Class SimpleConflictSubunitSpec.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SimpleConflictSubunitSpec.UnitName">
+            <summary>
+            Gets the name of the unit.
+            </summary>
+            <value>The name of the unit.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SimpleConflictSubunitSpec.SubunitName">
+            <summary>
+            Gets the name of the subunit.
+            </summary>
+            <value>The name of the subunit.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SimpleConflictSubunitSpec.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SimpleConflictSubunitSpec"/> class.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit">
+            <summary>
+            Class SubUnit.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit.SignificantDigits">
+            <summary>
+            Gets or sets the significant digits.
+            </summary>
+            <value>The significant digits.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit.Symbol">
+            <summary>
+            Gets or sets the symbol.
+            </summary>
+            <value>The symbol.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="significantDigits">The significant digits.</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit.#ctor(System.String,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="significantDigits">The significant digits.</param>
+            <param name="symbol">The symbol.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency">
+            <summary>
+            Class Currency.
+            </summary>
+            <seealso cref="T:Ecolab.EnvisionPlatform.Library.Entity.Tco.CurrencyEntity" />
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency"/> class.
+            </summary>
+            <param name="currencyCode">The currency code.</param>
+            <param name="name">The name.</param>
+            <param name="symbol">The symbol.</param>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency.DefaultCurrency">
+            <summary>
+            Gets the default currency.
+            </summary>
+            <value>The default currency.</value>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtData">
+            <summary>
+            CpmtData class
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtData.ContextId">
+            <summary>
+            Gest or sets context id
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtData.Interval">
+            <summary>
+            Gest or sets Interval
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtData.StartTimeStamp">
+            <summary>
+            Gest or sets Start timestamp
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtData.CpmtDataValues">
+            <summary>
+            Gest or sets Cpmt Data Values
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtData.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtData.#ctor(System.Int32,System.Int32,System.String,System.Collections.Generic.Dictionary{System.String,Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtMeasurement})">
+            <summary>
+            Parameterized Contructor
+            </summary>
+            <param name="contextId"></param>
+            <param name="interval"></param>
+            <param name="startTimeStamp"></param>
+            <param name="cpmtDataValues"></param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter">
+            <summary>
+            This class is used for filtering the condenser details.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.ContextId">
+            <summary>
+            Gets or sets Condenser Id
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.DateRange">
+            <summary>
+            Gets or setsDate Range
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.StartDate">
+            <summary>
+            Gets or sets Start Date
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.EndDate">
+            <summary>
+            Gets or sets End Date
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.PlantLoadMax">
+            <summary>
+            Gets or sets Plant Load Max
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.PlantLoadMin">
+            <summary>
+            Gets or sets Plant Load Min
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.PlantLoadAverage">
+            <summary>
+            Gets or sets Plant Load Average
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.PlantLoadDesign">
+            <summary>
+            Gets or sets Plant Load Design
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtFilter.#ctor(System.Int32,System.Collections.Generic.List{System.DateTime},System.DateTime,System.DateTime,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Parameterized constructor
+            </summary>
+            <param name="contextId">Context Id</param>
+            <param name="dateRange">Date Range</param>
+            <param name="startDate">Start Date</param>
+            <param name="endDate">End Date</param>
+            <param name="plantLoadMax">Plant LoadMax</param>
+            <param name="plantLoadMin">Plant LoadMin</param>
+            <param name="plantLoadAverage">Plant Load Average</param>
+            <param name="plantLoadDesign">Plant Load Design</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtMeasurement">
+            <summary>
+            This Class is a Model for Condensor Measurements
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtMeasurement.CpmtMeasurements">
+            <summary>
+            List object to store raw data values 
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtMeasurement.CondenserParam">
+            <summary>
+            Condenser Parameter to give condenser details
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtMeasurement.CpmtDates">
+            <summary>
+            List of Cpmt Dates
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Cpmt.CpmtMeasurement.#ctor(System.Collections.Generic.List{System.Double},Ecolab.NalcoWater.Azure.Core.Library.Model.Reference.CondenserParameter,System.Collections.Generic.List{System.DateTime})">
+            <summary>
+            Parameterized Constructor
+            </summary>
+            <param name="cpmtMeasurements"></param>
+            <param name="condenserParam"></param>
+            <param name="cpmtDates"></param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.AssetType">
+            <summary>
+            Class AssetType.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility">
+            <summary>
+            Class DisplayFacility.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility.DisplayText">
+            <summary>
+            Gets or sets the display text.
+            </summary>
+            <value>The display text.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="displayText">The display text.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult">
+            <summary>
+            Class HierSearchResult.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult.Level">
+            <summary>
+            Gets or sets the level.
+            </summary>
+            <value>The level.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult.Label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult.Identifier">
+            <summary>
+            Sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.HierSearchResult"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="level">The level.</param>
+            <param name="label">The label.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Hierarchy.Asset">
+            <summary>
+            Class Asset.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_OTHER">
+            <summary>
+              Looks up a localized string similar to Asset Failure (other).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_OTHER_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Failure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_OTHER_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Failure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_OTHER_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Failure (other).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_PERTIME">
+            <summary>
+              Looks up a localized string similar to Asset Failure (per time).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_PERTIME_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Failure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_PERTIME_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Failure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETFAILURE_PERTIME_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Failure (per time).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_OTHER">
+            <summary>
+              Looks up a localized string similar to Asset Life (other).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_OTHER_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Life.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_OTHER_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Life.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_OTHER_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Life (other).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_TIME">
+            <summary>
+              Looks up a localized string similar to Asset Life (time).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_TIME_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Life.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_TIME_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Life.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.ASSETLIFE_TIME_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Life (time).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CLEANINGFREQUENCY">
+            <summary>
+              Looks up a localized string similar to Cleaning Frequency.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CLEANINGFREQUENCY_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} ClnFrq.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CLEANINGFREQUENCY_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Cleaning Frequency.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CLEANINGFREQUENCY_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Cleaning Frequency.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONGENERAL">
+            <summary>
+              Looks up a localized string similar to Corrosion, General.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONGENERAL_SHORT">
+            <summary>
+              Looks up a localized string similar to CorrGnrl-{0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONGENERAL_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to Corrosion, General - {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONGENERAL_WITHUNITS">
+            <summary>
+              Looks up a localized string similar to Corrosion, General - {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONLOCALIZED">
+            <summary>
+              Looks up a localized string similar to Corrosion, Localized.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONLOCALIZED_SHORT">
+            <summary>
+              Looks up a localized string similar to CorrLocl-{0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONLOCALIZED_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to Corrosion, Localized - {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONLOCALIZED_WITHUNITS">
+            <summary>
+              Looks up a localized string similar to Corrosion, Localized - {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONPITDEPTH">
+            <summary>
+              Looks up a localized string similar to Corrosion, Pit Depth.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONPITDEPTH_SHORT">
+            <summary>
+              Looks up a localized string similar to PitDepth-{0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONPITDEPTH_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to Corrosion, Pit Depth - {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.CORROSIONPITDEPTH_WITHUNITS">
+            <summary>
+              Looks up a localized string similar to Corrosion, Pit Depth - {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.EVENTDATE">
+            <summary>
+              Looks up a localized string similar to Event Date (yyyymmdd).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.EVENTDATE_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Date.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.EVENTDATE_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Date (yyyymmdd).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.EVENTDATE_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Date (yyyymmdd).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.GASQUALITY">
+            <summary>
+              Looks up a localized string similar to Gas Quality.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.GASQUALITY_SHORT">
+            <summary>
+              Looks up a localized string similar to GasQlty.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.GASQUALITY_UNITS">
+            <summary>
+              Looks up a localized string similar to Gas Quality, {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.GASQUALITY_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to Gas Quality, {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCONCENTRATION">
+            <summary>
+              Looks up a localized string similar to Product Concentration.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCONCENTRATION_SHORT">
+            <summary>
+              Looks up a localized string similar to {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCONCENTRATION_STUI">
+            <summary>
+              Looks up a localized string similar to {0}.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCONCENTRATION_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} (Concentration).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCOSTMASS">
+            <summary>
+              Looks up a localized string similar to Product Cost (mass).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCOSTMASS_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCOSTMASS_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTCOSTMASS_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Cost (mass).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTDRAWDOWNRATE">
+            <summary>
+              Looks up a localized string similar to Product Drawdown Rate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTDRAWDOWNRATE_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Drwdwn.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTDRAWDOWNRATE_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Drawdown Rate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTDRAWDOWNRATE_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Drawdown Rate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATECOUNT">
+            <summary>
+              Looks up a localized string similar to Production Rate (Count).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATECOUNT_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Prod.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATECOUNT_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATECOUNT_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production (Count).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEMASS">
+            <summary>
+              Looks up a localized string similar to Production Rate (mass).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEMASS_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Prod.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEMASS_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEMASS_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production (Mass).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEPOWER">
+            <summary>
+              Looks up a localized string similar to Production Rate (power).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEPOWER_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Prod.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEPOWER_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEPOWER_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production (Power).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEVOLUME">
+            <summary>
+              Looks up a localized string similar to Production Rate (volume).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEVOLUME_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Prod.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEVOLUME_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.PRODUCTIONRATEVOLUME_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Production (Volume).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_Controller">
+            <summary>
+              Looks up a localized string similar to Controller.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_Custom">
+            <summary>
+              Looks up a localized string similar to Custom....
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_Customer">
+            <summary>
+              Looks up a localized string similar to Customer.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_GrabSample">
+            <summary>
+              Looks up a localized string similar to grab sample.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_HandHeldMeter">
+            <summary>
+              Looks up a localized string similar to hand-held meter.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_Meter">
+            <summary>
+              Looks up a localized string similar to Meter.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_Nalco">
+            <summary>
+              Looks up a localized string similar to Nalco.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Source_WetTest">
+            <summary>
+              Looks up a localized string similar to wet test.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_CAR">
+            <summary>
+              Looks up a localized string similar to Car.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_CONTROLLER">
+            <summary>
+              Looks up a localized string similar to controller.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_LABRESULT">
+            <summary>
+              Looks up a localized string similar to lab result.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_METER">
+            <summary>
+              Looks up a localized string similar to meter.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_MILK">
+            <summary>
+              Looks up a localized string similar to Milk.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_POWER">
+            <summary>
+              Looks up a localized string similar to Power.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_TESTSTRIPS">
+            <summary>
+              Looks up a localized string similar to test strips.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.Stui_TIRE">
+            <summary>
+              Looks up a localized string similar to tire.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.StuiType_Product">
+            <summary>
+              Looks up a localized string similar to concentration.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.StuiType_Rate">
+            <summary>
+              Looks up a localized string similar to Production.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.StuiType_Source">
+            <summary>
+              Looks up a localized string similar to Source.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.USAGERATEVOLUME">
+            <summary>
+              Looks up a localized string similar to Usage Rate (volume).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.USAGERATEVOLUME_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Usage.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.USAGERATEVOLUME_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Usage.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.USAGERATEVOLUME_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Usage (volume).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.VALUEMASS">
+            <summary>
+              Looks up a localized string similar to Value (mass).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.VALUEMASS_SHORT">
+            <summary>
+              Looks up a localized string similar to {0} Value.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.VALUEMASS_UNITS">
+            <summary>
+              Looks up a localized string similar to {0} Value.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Mde.Resources.VALUEMASS_WITHOUTUNITS">
+            <summary>
+              Looks up a localized string similar to {0} Value (mass).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ContextPointSetup.ResourceKey">
+            <summary>
+            Gets or sets the resource key.
+            </summary>
+            <value>The resource key.</value>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup">
+            <summary>
+            Class CalculatorTypeGroup.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup.Label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup.ResourceKey">
+            <summary>
+            Gets or sets the resource key.
+            </summary>
+            <value>The resource key.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup.CalculatorTypes">
+            <summary>
+            The calculator types
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="label">The label.</param>
+            <param name="resourceKey">The resource key.</param>
+            <param name="calculatorTypes">The calculator types.</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorTypeGroup.GetGroups">
+            <summary>
+            Gets the groups.
+            </summary>
+            <returns>List&lt;CalculatorTypeGroup&gt;.</returns>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectLiteVersion.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectLiteVersion.ProjectId">
+            <summary>
+            Gets or sets the project identifier.
+            </summary>
+            <value>The project identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectLiteVersion.DateCreatedUtc">
+            <summary>
+            Gets or sets the date created UTC.
+            </summary>
+            <value>The date created UTC.</value>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion">
+            <summary>
+            Class ProjectVersion.
+            </summary>
+            <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+        </member>
+        <member name="E:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.PropertyChanged">
+            <summary>
+            Occurs when [property changed].
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.OnPropertyChanged(System.String)">
+            <summary>
+            Called when [property changed].
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mId">
+            <summary>
+            The m identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mProjectId">
+            <summary>
+            The m project identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.ProjectId">
+            <summary>
+            Gets or sets the project identifier.
+            </summary>
+            <value>The project identifier.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mCalculatorType">
+            <summary>
+            The m calculator type
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.CalculatorType">
+            <summary>
+            Gets or sets the type of the calculator.
+            </summary>
+            <value>The type of the calculator.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mCurrency">
+            <summary>
+            The m currency
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.Currency">
+            <summary>
+            Gets or sets the currency.
+            </summary>
+            <value>The currency.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mDateCreatedUtc">
+            <summary>
+            The m date created UTC
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.DateCreatedUtc">
+            <summary>
+            Gets or sets the date created UTC.
+            </summary>
+            <value>The date created UTC.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mPublishedToCrmUtc">
+            <summary>
+            The m published to CRM UTC
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.PublishedToCrmUtc">
+            <summary>
+            Gets or sets the published to CRM UTC.
+            </summary>
+            <value>The published to CRM UTC.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mFacility">
+            <summary>
+            The m facility
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.Facility">
+            <summary>
+            Gets or sets the facility.
+            </summary>
+            <value>The facility.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mCreatedById">
+            <summary>
+            The m created by identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.CreatedById">
+            <summary>
+            Gets or sets the created by identifier.
+            </summary>
+            <value>The created by identifier.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mFacilityId">
+            <summary>
+            The m facility identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.FacilityId">
+            <summary>
+            Gets or sets the facility identifier.
+            </summary>
+            <value>The facility identifier.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mState">
+            <summary>
+            The m state
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.State">
+            <summary>
+            Gets or sets the state.
+            </summary>
+            <value>The state.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mGenericReadings">
+            <summary>
+            The m generic readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.GenericReadings">
+            <summary>
+            Gets or sets the generic readings.
+            </summary>
+            <value>The generic readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mUnitOfMeasure">
+            <summary>
+            The unit of measure
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.UnitOfMeasure">
+            <summary>
+            Gets or sets the unit of measure
+            </summary>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mCurrentReadings">
+            <summary>
+            The m current readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.CurrentReadings">
+            <summary>
+            Gets or sets the current readings.
+            </summary>
+            <value>The current readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mProposedReadings">
+            <summary>
+            The m proposed readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.ProposedReadings">
+            <summary>
+            Gets or sets the proposed readings.
+            </summary>
+            <value>The proposed readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mSavingsReadings">
+            <summary>
+            The m savings readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.SavingsReadings">
+            <summary>
+            Gets or sets the savings readings.
+            </summary>
+            <value>The savings readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mEroiWaterReadings">
+            <summary>
+            The m eroi water readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.EroiWaterReadings">
+            <summary>
+            Gets or sets the eroi water readings.
+            </summary>
+            <value>The eroi water readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mEroiWasteReadings">
+            <summary>
+            The m eroi waste readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.EroiWasteReadings">
+            <summary>
+            Gets or sets the eroi waste readings.
+            </summary>
+            <value>The eroi waste readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mEroiAssetReadings">
+            <summary>
+            The m eroi asset readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.EroiAssetReadings">
+            <summary>
+            Gets or sets the eroi asset readings.
+            </summary>
+            <value>The eroi asset readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mEroiEnergyReadings">
+            <summary>
+            The m eroi energy readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.EroiEnergyReadings">
+            <summary>
+            Gets or sets the eroi energy readings.
+            </summary>
+            <value>The eroi energy readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mEroiAirQualityReadings">
+            <summary>
+            The m eroi air quality readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.EroiAirQualityReadings">
+            <summary>
+            Gets or sets the eroi air quality readings.
+            </summary>
+            <value>The eroi air quality readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mOnTheFlyReadings">
+            <summary>
+            The m container for on the fly readings
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.OnTheFlyReadings">
+            <summary>
+            Gets or sets the on the fly readings
+            </summary>
+            <value>The on the fly readings.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mContextPoints">
+            <summary>
+            The m context points
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.ContextPoints">
+            <summary>
+            Gets or sets the contextpoints.
+            </summary>
+            <value>The contextpoints.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mContextPointIds">
+            <summary>
+            The m context point ids
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.ContextPointIds">
+            <summary>
+            Gets or sets the contextpoint ids.
+            </summary>
+            <value>The contextpoint ids.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mCalculatorTypeId">
+            <summary>
+            The m calculator type identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.CalculatorTypeId">
+            <summary>
+            Gets or sets the calculator type identifier.
+            </summary>
+            <value>The calculator type identifier.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mCrmProjectId">
+            <summary>
+            The m CRM project identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.CrmProjectId">
+            <summary>
+            Gets or sets the CRM project identifier.
+            </summary>
+            <value>The CRM project identifier.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mProjectName">
+            <summary>
+            The m project name
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.ProjectName">
+            <summary>
+            Gets or sets the name of the project.
+            </summary>
+            <value>The name of the project.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mPartitionBy">
+            <summary>
+            The m partition by
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.PartitionBy">
+            <summary>
+            Gets or sets the partition by.
+            </summary>
+            <value>The partition by.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mCreatedBy">
+            <summary>
+            The m created by
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.CreatedBy">
+            <summary>
+            Gets or sets the created by.
+            </summary>
+            <value>The created by.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mLastViewed">
+            <summary>
+            The m last viewed
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.LastViewed">
+            <summary>
+            Gets or sets the last viewed.
+            </summary>
+            <value>The last viewed.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mProjectDate">
+            <summary>
+            The m project date
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.ProjectDate">
+            <summary>
+            Gets or sets the project date.
+            </summary>
+            <value>The last viewed.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mUploadImages">
+            <summary>
+            The m upload images
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.UploadImages">
+            <summary>
+            Gets or sets the Upload Images.
+            </summary>
+            <value>The last viewed.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.mReportNotes">
+            <summary>
+            The m report notes
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.ReportNotes">
+            <summary>
+            ReportNotes
+            </summary>
+            <value>The report notes.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.StatusType">
+            <summary>
+            Gets or sets the type of the status.
+            </summary>
+            <value>The type of the status.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.AllReadings">
+            <summary>
+            Gets all readings.
+            </summary>
+            <value>All readings.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>ProjectVersion.</returns>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.IsEqualTo(Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion)">
+            <summary>
+            Determines whether [is equal to] [the specified project version].
+            </summary>
+            <param name="projectVersion">The project version.</param>
+            <returns><c>true</c> if [is equal to] [the specified project version]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.Copy">
+            <summary>
+            Copies this instance.
+            </summary>
+            <returns>ProjectVersion.</returns>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion" /> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion.#ctor(System.Guid,System.Guid,Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType,Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency,System.Nullable{System.DateTime},System.Nullable{System.DateTime},Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},System.Collections.Generic.List{Ecolab.NalcoWater.Azure.Core.Library.Model.Contextualization.ContextPoint},System.Collections.Generic.List{System.Int32},System.String,System.String,System.String,System.String,Ecolab.NalcoWater.Azure.Core.Library.Model.Core.Community.User,System.DateTime,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ImageDetails},System.Nullable{System.DateTime},System.String,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading},Ecolab.EnvisionPlatform.Library.Base.Tco.StatusType,Ecolab.NalcoWater.Azure.Core.Library.Base.Core.UnitsofMeasureSystem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.ProjectVersion" /> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="projectId">The project identifier.</param>
+            <param name="calculatorType">Type of the calculator.</param>
+            <param name="currency">The currency.</param>
+            <param name="dateCreatedUtc">The date created UTC.</param>
+            <param name="publishedToCrmUtc">The published to CRM UTC.</param>
+            <param name="facility">The facility.</param>
+            <param name="createdById">The created by identifier.</param>
+            <param name="facilityId">The facility identifier.</param>
+            <param name="state">The state.</param>
+            <param name="genericReadings">The generic readings.</param>
+            <param name="currentReadings">The current readings.</param>
+            <param name="proposedReadings">The proposed readings.</param>
+            <param name="savingsReadings">The savings readings.</param>
+            <param name="eroiWaterReadings">The eroi water readings.</param>
+            <param name="eroiWasteReadings">The eroi waste readings.</param>
+            <param name="contextPoints">The context points.</param>
+            <param name="contextPointIds">The context point ids.</param>
+            <param name="calculatorTypeId">The calculator type identifier.</param>
+            <param name="crmProjectId">The CRM project identifier.</param>
+            <param name="projectName">Name of the project.</param>
+            <param name="partitionBy">The partition by.</param>
+            <param name="createdBy">The created by.</param>
+            <param name="lastViewed">The last viewed.</param>
+            <param name="uploadImages">Upload the Images</param>
+            <param name="projectDate">The Project Date</param>
+            <param name="reportNotes">The Report Notes</param>
+            <param name="eroiAssetReadings">Eroi Asset Readings</param>
+            <param name="eroiEnergyReadings">Eroi Energy Readings</param>
+            <param name="statusType">Status type</param>
+            <param name="unitOfMeasure">Unit of measure</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed">
+            <summary>
+            Class RecentlyViewed.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed.UserId">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>The user identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed.ProjectId">
+            <summary>
+            Gets or sets the project identifier.
+            </summary>
+            <value>The project identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed.LastViewed">
+            <summary>
+            Gets or sets the last viewed.
+            </summary>
+            <value>The last viewed.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed.#ctor(System.Int32,System.Guid,System.Nullable{System.DateTime})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.RecentlyViewed"/> class.
+            </summary>
+            <param name="userId">The user identifier.</param>
+            <param name="projectId">The project identifier.</param>
+            <param name="lastViewed">The last viewed.</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ResourceHelper.GetResourceKeyValue(System.String)">
+            <summary>
+            Resource Helper to get the value of the ResourceKey
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.AmmoniaCondenserOperation">
+            <summary>
+              Looks up a localized string similar to Ammonia Condenser Operation.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.AmmoniaCondensers">
+            <summary>
+              Looks up a localized string similar to Ammonia Condenser Savings from Reduced Scaling.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.AnnualizedChange">
+            <summary>
+              Looks up a localized string similar to Annualized Change.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.AnnualizedChangeWaterCost">
+            <summary>
+              Looks up a localized string similar to Water Costs &amp; Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.AnnualizedWaterAndEnergyCost">
+            <summary>
+              Looks up a localized string similar to Annualized Water &amp; Energy Costs.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BDHeatRecovery">
+            <summary>
+              Looks up a localized string similar to BD Heat Recovery.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Blowdown">
+            <summary>
+              Looks up a localized string similar to Blowdown.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Blowdown_Hint">
+            <summary>
+              Looks up a localized string similar to Blowdown.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BlowDownAnnualized">
+            <summary>
+              Looks up a localized string similar to Discharge Water.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BlowDownAnnualized_Hint">
+            <summary>
+              Looks up a localized string similar to Discharge Water.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BlowdownEnthaphy">
+            <summary>
+              Looks up a localized string similar to Blowdown Enthaphy.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Blowdownflow">
+            <summary>
+              Looks up a localized string similar to Blowdown flow.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BlowdownWaterCost">
+            <summary>
+              Looks up a localized string similar to Blowdown Water Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BlowdownWaterCost_Hint">
+            <summary>
+              Looks up a localized string similar to Best to get this cost from the customer or reference another local customer facility. Average cost USA is $4.00..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Boiler">
+            <summary>
+              Looks up a localized string similar to Boiler.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BoilerCycles">
+            <summary>
+              Looks up a localized string similar to Boiler Cycles.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BoilerEfficiency">
+            <summary>
+              Looks up a localized string similar to Boiler Efficiency.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BoilerEfficiency_Hint">
+            <summary>
+              Looks up a localized string similar to Enter % efficiency for your boiler from customer. Utilize comment box for additional information..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BoilerSteamLeaks">
+            <summary>
+              Looks up a localized string similar to Energy Water Savings from Steam Leaks.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BWESIncreasingCondensate">
+            <summary>
+              Looks up a localized string similar to Savings from Increasing Condensate Return.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BWESIncreasingCondensateAndCycles">
+            <summary>
+              Looks up a localized string similar to Savings from Increasing Condensate Return and Cycles.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.BWESIncreasingCycles">
+            <summary>
+              Looks up a localized string similar to Savings from Increasing Boiler Cycles.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ChemicalTreatmentCost">
+            <summary>
+              Looks up a localized string similar to Chemical Treatment.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ChemicalTreatmentCost_Hint">
+            <summary>
+              Looks up a localized string similar to If no savings for this line item enter zero in Current and Proposed Cost. Capture cost increases on the Customer Report in &apos;Additional Program Cost&apos;, &apos;Actions to be Taken&apos;, and in the &apos;ROI Calculation&apos; sections..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ChilledWaterTemperature">
+            <summary>
+              Looks up a localized string similar to Temperature (Chilled Water).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ChilledWaterTemperature_Hint">
+            <summary>
+              Looks up a localized string similar to Enter reading from Chiller Control Panel or read temp gauge on chilled water leaving piping..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ChillerEfficiency">
+            <summary>
+              Looks up a localized string similar to Chiller Efficiency.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ClosedLoop">
+            <summary>
+              Looks up a localized string similar to Closed Loop.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ClosedLoopLeaksChilledWater">
+            <summary>
+              Looks up a localized string similar to Savings from Eliminating Chilled Water Leaks.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ClosedLoopLeaksHotWater">
+            <summary>
+              Looks up a localized string similar to Savings from Eliminating Hot Water Leaks.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CompressorEnergyDraw">
+            <summary>
+              Looks up a localized string similar to Compressor Energy Draw.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CompressorHeadPressure">
+            <summary>
+              Looks up a localized string similar to Compressor Head Pressure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CompressorHeadPressureCurrent_Hint">
+            <summary>
+              Looks up a localized string similar to Current Head pressure. Value will be higher during warm weather..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CompressorHeadPressureProposed_Hint">
+            <summary>
+              Looks up a localized string similar to Proposed pressure. A typical Ammonia refrigeration system operates at 140-160 PSIG. Enter the pressure of a clean system if known..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CondensateEnthalpy">
+            <summary>
+              Looks up a localized string similar to Condensate Enthalpy.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CondensateReturn">
+            <summary>
+              Looks up a localized string similar to Condensate Return.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CondenserCapacityRequired">
+            <summary>
+              Looks up a localized string similar to Condenser Capacity Required.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CoolingTower">
+            <summary>
+              Looks up a localized string similar to Cooling Tower.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CoolingTowers">
+            <summary>
+              Looks up a localized string similar to Cooling Towers.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CoolingWaterCycle">
+            <summary>
+              Looks up a localized string similar to Water Savings by Increasing Tower Cycles.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CorrosionCostSavings">
+            <summary>
+              Looks up a localized string similar to Corrosion Costs and Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Corrosionrate">
+            <summary>
+              Looks up a localized string similar to Corrosion Rate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Corrosionratecurrent_Hint">
+            <summary>
+              Looks up a localized string similar to Enter corrosion rate data from Corrosion coupon analysis from Nalco Lab or use NCM data from the 3D Trasar..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Corrosionrateproposed_Hint">
+            <summary>
+              Looks up a localized string similar to Use industry norms for proposed new corrosion rate with the Nalco Chemical Treatment Program..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CostDuetoCorrosion">
+            <summary>
+              Looks up a localized string similar to Cost Due To Corrosion.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CostDuetoCorrosionSavings">
+            <summary>
+              Looks up a localized string similar to Reduce Corrosion Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CostofSteam">
+            <summary>
+              Looks up a localized string similar to Cost of Steam.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CurrentAnnualizedChange_Hint">
+            <summary>
+              Looks up a localized string similar to Annualized Change.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CurrentAnnualizedChangeWaterCost_Hint">
+            <summary>
+              Looks up a localized string similar to Water Costs &amp; Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CurrentCoolingTower_Hint">
+            <summary>
+              Looks up a localized string similar to Cooling Tower.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CurrentOtherCost_Hint">
+            <summary>
+              Looks up a localized string similar to Program expenses.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Currentwallthickness">
+            <summary>
+              Looks up a localized string similar to Current Wall Thickness.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Currentwallthickness_Hint">
+            <summary>
+              Looks up a localized string similar to Get current thickness measurement from customer if possible. Send in sample to Nalco Metals Lab for measurement..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CyclesOfConcentration">
+            <summary>
+              Looks up a localized string similar to Cycles of Concentration.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CyclesOfConcentration_Hint">
+            <summary>
+              Looks up a localized string similar to Enter cycles. The most common calculation for cycles is conductivity of tower water divided by conductivity of make-up water..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CyclesOfConcentration_Proposed_Hint">
+            <summary>
+              Looks up a localized string similar to Enter proposed new cycles of concentration. Please verify proposed cycles with the optimizer..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CyclesOfConcentrationCurrentAmmonia_Hint">
+            <summary>
+              Looks up a localized string similar to The most common proxy for cycles is conductivity of tower water divided by conductivity of make up water..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.CyclesOfConcentrationProposedAmmonia_Hint">
+            <summary>
+              Looks up a localized string similar to Please verify proposed cycles with the optimizer..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.DeltaTemperature">
+            <summary>
+              Looks up a localized string similar to Delta Temperature.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.DeltaTemperature_Hint">
+            <summary>
+              Looks up a localized string similar to Determine by subtracting Tower Return Water Temp from Supply Temp. Use average value for year..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Description_Current">
+            <summary>
+              Looks up a localized string similar to Current Program Description.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Description_Current_Hint">
+            <summary>
+              Looks up a localized string similar to Current Program Description.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Description_Proposed">
+            <summary>
+              Looks up a localized string similar to Proposed Program Description.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Description_Proposed_Hint">
+            <summary>
+              Looks up a localized string similar to Proposed Program Description.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.DischargeWater_Savings">
+            <summary>
+              Looks up a localized string similar to Discharge Water Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.DischargeWater_Savings_Hint">
+            <summary>
+              Looks up a localized string similar to Discharge Water Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.DischargeWaterCost_Savings">
+            <summary>
+              Looks up a localized string similar to Discharge Water Cost Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.DischargeWaterCost_Savings_Hint">
+            <summary>
+              Looks up a localized string similar to Discharge Water Cost Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ElectricEnergyLost">
+            <summary>
+              Looks up a localized string similar to Electrical Energy Required.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ElectricityCost">
+            <summary>
+              Looks up a localized string similar to Electricity.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Energy">
+            <summary>
+              Looks up a localized string similar to Energy.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergyCost">
+            <summary>
+              Looks up a localized string similar to Energy Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergyCost_Hint">
+            <summary>
+              Looks up a localized string similar to Best to get actual figure from customer.The average price for electricity in the US is about $0.12 per kWh.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergyCost_Savings">
+            <summary>
+              Looks up a localized string similar to Energy Cost Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergyCostBoiler">
+            <summary>
+              Looks up a localized string similar to Energy Cost Savings - Increased Boiler Cycles.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergyCostCondensate">
+            <summary>
+              Looks up a localized string similar to Energy Cost Savings - Increased Condensate Return.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergyCostSubTotal">
+            <summary>
+              Looks up a localized string similar to Energy Cost Savings - Subtotal.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergyLost">
+            <summary>
+              Looks up a localized string similar to Energy Lost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergySavings">
+            <summary>
+              Looks up a localized string similar to Energy Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EnergySource">
+            <summary>
+              Looks up a localized string similar to Energy Source.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIAirQuality">
+            <summary>
+              Looks up a localized string similar to Air Quality.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIAirQualityPercent">
+            <summary>
+              Looks up a localized string similar to Air Quality Percentage.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIAssetLife">
+            <summary>
+              Looks up a localized string similar to Increased Asset Life.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIAssetLife_Cost">
+            <summary>
+              Looks up a localized string similar to Asset Life Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIAssetLife_Percent">
+            <summary>
+              Looks up a localized string similar to Percentage Asset Life Increase.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIReducedWaste">
+            <summary>
+              Looks up a localized string similar to Reduced Waste.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIReducedWaste_Cost">
+            <summary>
+              Looks up a localized string similar to Reduced Waste Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIReducedWaste_Cost_Hint">
+            <summary>
+              Looks up a localized string similar to Reduced Waste Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIReducedWaste_Hint">
+            <summary>
+              Looks up a localized string similar to Reduced Waste.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIReducedWaste_Percent">
+            <summary>
+              Looks up a localized string similar to Reduced Waste Percent.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROIReducedWaste_Percent_Hint">
+            <summary>
+              Looks up a localized string similar to Reduced Waste Percent.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedEnergy">
+            <summary>
+              Looks up a localized string similar to Saved Energy.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedEnergy_Cost">
+            <summary>
+              Looks up a localized string similar to Energy Life Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedEnergy_Percent">
+            <summary>
+              Looks up a localized string similar to Percentage Energy.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedWater">
+            <summary>
+              Looks up a localized string similar to Saved Water.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedWater_Cost">
+            <summary>
+              Looks up a localized string similar to Saved Water Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedWater_Cost_Hint">
+            <summary>
+              Looks up a localized string similar to Saved Water Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedWater_Hint">
+            <summary>
+              Looks up a localized string similar to Saved Water.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedWater_Percent">
+            <summary>
+              Looks up a localized string similar to Saved Water Percent.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.eROISavedWater_Percent_Hint">
+            <summary>
+              Looks up a localized string similar to Saved Water Percent.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EstimatedScaleThickness">
+            <summary>
+              Looks up a localized string similar to Estimated Scale Thickness.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EvaporationCreditInUse">
+            <summary>
+              Looks up a localized string similar to Evaporation Credit in Use?.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EvaporationCreditInUse_Hint">
+            <summary>
+              Looks up a localized string similar to Evaporation Credit in Use?.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EvaporationFactor">
+            <summary>
+              Looks up a localized string similar to Evaporation Efficiency.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EvaporationFactor_Hint">
+            <summary>
+              Looks up a localized string similar to The evaporation efficiency reflects the relative humidity in the vicinity of the tower. Range is 0.75 to 1.0. Typical Factor is usually 0.85..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EvaporationRate">
+            <summary>
+              Looks up a localized string similar to Evaporation.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.EvaporationRate_Hint">
+            <summary>
+              Looks up a localized string similar to Evaporation.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Feedwaterflow">
+            <summary>
+              Looks up a localized string similar to Feedwater flow.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.FuelCost">
+            <summary>
+              Looks up a localized string similar to Fuel Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.FuelCost_Hint">
+            <summary>
+              Looks up a localized string similar to Best to get customer actual $/MMBTU. Can go to http://www.eia.gov/dnav/ng/ng_pri_sum_dcu_nus_m.htm.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.FuelEnergyLost">
+            <summary>
+              Looks up a localized string similar to Fuel Energy Lost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.FuelType">
+            <summary>
+              Looks up a localized string similar to Fuel Type.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.FuelType_Hint">
+            <summary>
+              Looks up a localized string similar to Fuel Type from drop down list.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.GreenhouseGasSavings">
+            <summary>
+              Looks up a localized string similar to Greenhouse Gas (CO2) Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.HeatRecoveryEfficiency">
+            <summary>
+              Looks up a localized string similar to Heat Recovery %Efficiency.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.HotWaterTemperature">
+            <summary>
+              Looks up a localized string similar to Temperature (Hot Water).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.HotWaterTemperature_Hint">
+            <summary>
+              Looks up a localized string similar to Enter reading from Boiler Control Panel or read temp gauge on boiler water leaving piping. Typical Hot Water reading is 140 degrees F..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Inservicedate">
+            <summary>
+              Looks up a localized string similar to In Service Date.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Inservicedate_Hint">
+            <summary>
+              Looks up a localized string similar to Utilize your knowledge or get from customer approximate date piping was put in service..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.LaborCost">
+            <summary>
+              Looks up a localized string similar to Labor.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.LaborCost_Hint">
+            <summary>
+              Looks up a localized string similar to If no savings for this line item enter zero in Current and Proposed Cost. Capture cost increases on the Customer Report in &apos;Additional Program Cost&apos;, &apos;Actions to be Taken&apos;, and in the &apos;ROI Calculation&apos; sections..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.LeakFlowRate">
+            <summary>
+              Looks up a localized string similar to Leak flow rate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.LeakFlowRate_Hint">
+            <summary>
+              Looks up a localized string similar to Capture and measure the rate of the leak. Or if have a make up meter monitor and calculate the make up rate over time..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MaintenanceCost">
+            <summary>
+              Looks up a localized string similar to Maintenance.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MaintenanceCost_Hint">
+            <summary>
+              Looks up a localized string similar to If no savings for this line item enter zero in Current and Proposed Cost. Capture cost increases on the Customer Report in &apos;Additional Program Cost&apos;, &apos;Actions to be Taken&apos;, and in the &apos;ROI Calculation&apos; sections..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Makeup">
+            <summary>
+              Looks up a localized string similar to Makeup.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Makeup_Hint">
+            <summary>
+              Looks up a localized string similar to Makeup.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeUpAnnualized">
+            <summary>
+              Looks up a localized string similar to Makeup Water.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeUpAnnualized_Hint">
+            <summary>
+              Looks up a localized string similar to Makeup Water.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupEnthalpy">
+            <summary>
+              Looks up a localized string similar to Makeup Enthalpy.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupFlow">
+            <summary>
+              Looks up a localized string similar to Makeup Flow.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeUpTemperature_Hint">
+            <summary>
+              Looks up a localized string similar to Enter value for make up water temp to plant..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWater_Savings">
+            <summary>
+              Looks up a localized string similar to Makeup Water Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWater_Savings_Hint">
+            <summary>
+              Looks up a localized string similar to Makeup Water Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWaterCost">
+            <summary>
+              Looks up a localized string similar to Makeup Water Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWaterCost_Hint">
+            <summary>
+              Looks up a localized string similar to Best to get this cost from the customer or reference another local customer facility. Average cost  USA is $3.00..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWaterCost_Savings">
+            <summary>
+              Looks up a localized string similar to Makeup Water Cost Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWaterCost_Savings_Hint">
+            <summary>
+              Looks up a localized string similar to Makeup Water Cost Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWaterCostCondensate">
+            <summary>
+              Looks up a localized string similar to Makeup Water Cost Savings - Increased Condensate Return.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWaterCostCycles">
+            <summary>
+              Looks up a localized string similar to Makeup Water Cost Savings - Increased Cycles.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeUpWaterCostSubTotal">
+            <summary>
+              Looks up a localized string similar to Makeup Water Cost Savings - Subtotal.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeupWaterTemp">
+            <summary>
+              Looks up a localized string similar to Temperature (Makeup Water).
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MakeUpWaterTemp_Hint">
+            <summary>
+              Looks up a localized string similar to Enter value for make-up water temp to plant..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MiscellaneousCost">
+            <summary>
+              Looks up a localized string similar to Miscellaneous.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.MiscellaneousCost_Hint">
+            <summary>
+              Looks up a localized string similar to If no savings for this line item enter zero in Current and Proposed Cost. Capture cost increases on the Customer Report in &apos;Additional Program Cost&apos;, &apos;Actions to be Taken&apos;, and in the &apos;ROI Calculation&apos; sections..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.NetAssetLifeIncrease">
+            <summary>
+              Looks up a localized string similar to Net Asset Life Increase.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.OperatingDaysPerYear">
+            <summary>
+              Looks up a localized string similar to Operating Hours Per Year.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.OperatingDaysPerYear_Hint">
+            <summary>
+              Looks up a localized string similar to Utilize your knowledge of the system and discuss with customer to determine Operating Days per Year..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.OperatingHoursPerDay">
+            <summary>
+              Looks up a localized string similar to Operating Hours Per Day.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.OperatingHoursPerDay_Hint">
+            <summary>
+              Looks up a localized string similar to Utilize your knowledge of the system and discuss with customer to determine Operating Hours per Day..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Originalwallthickness">
+            <summary>
+              Looks up a localized string similar to Original Wall Thickness.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.OtherCost">
+            <summary>
+              Looks up a localized string similar to Program expenses.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.PercentageLoad">
+            <summary>
+              Looks up a localized string similar to % Load.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Pipeagecurrent">
+            <summary>
+              Looks up a localized string similar to Pipe Age.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ProductionCost">
+            <summary>
+              Looks up a localized string similar to Production.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ProductionCost_Hint">
+            <summary>
+              Looks up a localized string similar to If no savings for this line item enter zero in Current and Proposed Cost. Capture cost increases on the Customer Report in &apos;Additional Program Cost&apos;, &apos;Actions to be Taken&apos;, and in the &apos;ROI Calculation&apos; sections..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ProgramExpenses_Savings">
+            <summary>
+              Looks up a localized string similar to Sub-Total of Program Expenses.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ProgramExpenses_Savings_Hint">
+            <summary>
+              Looks up a localized string similar to Sub-Total of Program Expenses.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.RecirculationRate">
+            <summary>
+              Looks up a localized string similar to Recirculation Rate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.RecirculationRate_Hint">
+            <summary>
+              Looks up a localized string similar to Get RR from recirc pump nameplate, operators, or engineering specs. If not available determine Tons. Calculate Recirc Rate: RR= Tons * 3..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ReducedCorrosion">
+            <summary>
+              Looks up a localized string similar to Reduced Corrosion.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ReducedCorrosionRates">
+            <summary>
+              Looks up a localized string similar to Savings from Reduced Corrosion.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.RemainingLife">
+            <summary>
+              Looks up a localized string similar to Remaining Life.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Replacementcost">
+            <summary>
+              Looks up a localized string similar to Replacement Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Replacementcost_Hint">
+            <summary>
+              Looks up a localized string similar to Discuss with customer. Determine feet of pipe to be replaced and get agreement of replacement cost per foot. Include old pipe tear out cost, new pipe cost, labor, etc. Also consider cost of downtime for plant if needed to replace the piping..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ReplacementPointPercentage">
+            <summary>
+              Looks up a localized string similar to Replacement Point Percentage.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Replacementwallthickness">
+            <summary>
+              Looks up a localized string similar to Replacement Wall Thickness.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Replacementwallthickness_Hint">
+            <summary>
+              Looks up a localized string similar to Typical replacement point is 50% of original wall thickness..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Report_Details">
+            <summary>
+              Looks up a localized string similar to Report Details.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Report_Details_Hint">
+            <summary>
+              Looks up a localized string similar to Report Details.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Report_ImgUploader">
+            <summary>
+              Looks up a localized string similar to Image.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Report_ImgUploader_Hint">
+            <summary>
+              Looks up a localized string similar to Image.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Report_Note">
+            <summary>
+              Looks up a localized string similar to Report Note.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Report_Note_Hint">
+            <summary>
+              Looks up a localized string similar to Report Note.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ReturnCondensateAnnualized">
+            <summary>
+              Looks up a localized string similar to Return Condensate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ReturnCondensateflow">
+            <summary>
+              Looks up a localized string similar to Return Condensate flow.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ReturnCondensateTemp">
+            <summary>
+              Looks up a localized string similar to Return Condensate Temperature.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.ReturnCondensateTemp_Hint">
+            <summary>
+              Looks up a localized string similar to Get from gauge on condensate return line or condensate receiver. Check safely with temperature gauge or heat gun. Typically 160 degrees F to 180 degrees F..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SaturationTempearture">
+            <summary>
+              Looks up a localized string similar to Steam Temperature Saturated.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SavingsCurrentvsProposed">
+            <summary>
+              Looks up a localized string similar to Savings: Current vs. Proposed.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SavingsCurrentvsProposed_Hint">
+            <summary>
+              Looks up a localized string similar to Savings: Current vs. Proposed.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SewerCost">
+            <summary>
+              Looks up a localized string similar to Sewer Cost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SewerCost_Hint">
+            <summary>
+              Looks up a localized string similar to Best to get this cost from the customer or reference another local customer facility. Average cost  USA is $4.00..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SteamEnthaphy">
+            <summary>
+              Looks up a localized string similar to Steam Enthaphy.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SteamPressure">
+            <summary>
+              Looks up a localized string similar to Steam Pressure.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SteamRate">
+            <summary>
+              Looks up a localized string similar to Steam Rate.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SteamRate_Hint">
+            <summary>
+              Looks up a localized string similar to Current State ONLY: Convert from Boiler Horsepower by multiplying Hp by 34.5 to get LBS/hr and then multiply by % average load on the boiler..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SubTotal_Savings">
+            <summary>
+              Looks up a localized string similar to Sub-Total Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SubTotal_Savings_Hint">
+            <summary>
+              Looks up a localized string similar to Sub-Total Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SuperHeatGreaterStemTempSaturation">
+            <summary>
+              Looks up a localized string similar to Steam Temperature Super heated must be greater than Steam Temperature Saturation.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.SuperheatSteamTemperature">
+            <summary>
+              Looks up a localized string similar to Steam Temperature Superheated.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Total_Savings">
+            <summary>
+              Looks up a localized string similar to Total Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.Total_Savings_Hint">
+            <summary>
+              Looks up a localized string similar to Total Savings.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.TotalCompressorCapacity">
+            <summary>
+              Looks up a localized string similar to Total Compressor Capacity.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.TotalCompressorCapacity_Hint">
+            <summary>
+              Looks up a localized string similar to Some plants may not know their actual cooling load, but they know their compressor load. Get the name plate info off the compressors or ask plant refrigeration folks. For plants with multiple compressors, get total HP and %load..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.TotalCost">
+            <summary>
+              Looks up a localized string similar to Total.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.TotalCost_Hint">
+            <summary>
+              Looks up a localized string similar to Total.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.TotalWaterLost">
+            <summary>
+              Looks up a localized string similar to Total water lost.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.TRASARController">
+            <summary>
+              Looks up a localized string similar to 3DTRASAR controller.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.TRASARController_Hint">
+            <summary>
+              Looks up a localized string similar to If no savings for this line item enter zero in Current and Proposed Cost. Capture cost increases on the Customer Report in &apos;Additional Program Cost&apos;, &apos;Actions to be Taken&apos;, and in the &apos;ROI Calculation&apos; sections..
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Resources.TcoResources.WallThicknessCurrent">
+            <summary>
+              Looks up a localized string similar to Wall Thickness.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoChart">
+            <summary>
+            Class TcoChart.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoChart.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoChart.Label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoChart.ChartType">
+            <summary>
+            Gets or sets the type of the chart.
+            </summary>
+            <value>The type of the chart.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoChart.#ctor(System.String,System.String,Ecolab.EnvisionPlatform.Library.Base.Tco.ChartType,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoChart"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="label">The label.</param>
+            <param name="chartType">Type of the chart.</param>
+            <param name="waterParameters">Water parameters.</param>
+            <param name="wasteParameters">Waste parameters.</param>
+            <param name="energyParameters">Waste parameters.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter">
+            <summary>
+            Class TcoParameter.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.Label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.Hint">
+            <summary>
+            Gets or sets the hint.
+            </summary>
+            <value>The hint.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.UsageKey">
+            <summary>
+            Gets or sets the usage key.
+            </summary>
+            <value>The usage key.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.ResourceKey">
+            <summary>
+            Gets or sets the resource key.
+            </summary>
+            <value>The resource key.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.DataType">
+            <summary>
+            Gets or sets the type of the data.
+            </summary>
+            <value>The type of the data.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.DefaultValue">
+            <summary>
+            Gets or sets the default value.
+            </summary>
+            <value>The default value.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.HighLimit">
+            <summary>
+            Gets or sets the high limit.
+            </summary>
+            <value>The high limit.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.LowLimit">
+            <summary>
+            Gets or sets the low limit.
+            </summary>
+            <value>The low limit.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.Required">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter"/> is required.
+            </summary>
+            <value><c>true</c> if required; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.ResponseItems">
+            <summary>
+            Gets or sets the picker values.
+            </summary>
+            <value>The picker values.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.HasCurrency">
+            <summary>
+            Gets or sets the has currency.
+            </summary>
+            <value>The has currency.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.LabelStyle">
+            <summary>
+            Gets or sets the label style.
+            </summary>
+            <value>The label style.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Ecolab.EnvisionPlatform.Library.Base.Tco.InputDataType,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Boolean,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ResponseItem},System.Boolean,Ecolab.EnvisionPlatform.Library.Base.Tco.LabelStyle,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="label">The label.</param>
+            <param name="hint">The hint.</param>
+            <param name="usageKey">The usage key.</param>
+            <param name="resourceKey">The resource key.</param>
+            <param name="resourceKeyHint">The resource key.</param>
+            <param name="dataType">Type of the data.</param>
+            <param name="defaultValue">The default value.</param>
+            <param name="highLimit">The high limit.</param>
+            <param name="lowLimit">The low limit.</param>
+            <param name="required">if set to <c>true</c> [required].</param>
+            <param name="responseItems">The picker values.</param>
+            <param name="hasCurrency">The has currency.</param>
+            <param name="labelStyle">The style.</param>
+            <param name="isVisible">The style.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup">
+            <summary>
+            Class ParameterGroup.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup.Label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup.ResourceKey">
+            <summary>
+            Gets or sets the resource key.
+            </summary>
+            <value>The resource key.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup.Parameters">
+            <summary>
+            Gets or sets the parameters.
+            </summary>
+            <value>The parameters.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="label">The label.</param>
+            <param name="resourceKey">The resource key.</param>
+            <param name="parameters">The parameters.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading">
+            <summary>
+            Class TcoParameterReading.
+            </summary>
+            <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+        </member>
+        <member name="E:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.PropertyChanged">
+            <summary>
+            Occurs when [property changed].
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.OnPropertyChanged(System.String)">
+            <summary>
+            Called when [property changed].
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mParameterId">
+            <summary>
+            The m parameter identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.ParameterId">
+            <summary>
+            Gets or sets the si value.
+            </summary>
+            <value>The si value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mIsEnabled">
+            <summary>
+            The m parameter identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.IsEnabled">
+            <summary>
+            Gets or sets the is enabled.
+            </summary>
+            <value>The is enabled value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mError">
+            <summary>
+            The m parameter identifier
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.Error">
+            <summary>
+            Gets or sets the is error.
+            </summary>
+            <value>The is error value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mNumericValue">
+            <summary>
+            The m numeric value
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.NumericValue">
+            <summary>
+            Gets or sets the numeric value.
+            </summary>
+            <value>The numeric value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mStringValue">
+            <summary>
+            The m string value
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.StringValue">
+            <summary>
+            Gets or sets the string value.
+            </summary>
+            <value>The string value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mDateTimeValue">
+            <summary>
+            The m date time value
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.DateTimeValue">
+            <summary>
+            Gets or sets the date time value.
+            </summary>
+            <value>The date time value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mDimensionalUnit">
+            <summary>
+            The m dimensional unit
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.DimensionalUnit">
+            <summary>
+            Gets or sets the unit of the reading.
+            </summary>
+            <value>The unit of the reading.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mSubUnitSelected">
+            <summary>
+            The m selected sub unit
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.SubUnitSelected">
+            <summary>
+            Gets or sets the index of the selected unit.
+            </summary>
+            <value>The selected unit of the reading.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mCurrency">
+            <summary>
+            The m currency
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.Currency">
+            <summary>
+            Gets or sets the currency of the reading.
+            </summary>
+            <value>The currency of the reading.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mAssemblyName">
+            <summary>
+            The m assembly name
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.AssemblyName">
+            <summary>
+            Gets or sets the name of the assembly.
+            </summary>
+            <value>The name of the assembly.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mAssemblyClass">
+            <summary>
+            The m assembly class
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.AssemblyClass">
+            <summary>
+            Gets or sets the assembly class.
+            </summary>
+            <value>The assembly class.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.DisplayValue">
+            <summary>
+            Gets the display value of the reading.
+            </summary>
+            <value>The display value of the reading.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.DisplayValueWithoutUnit">
+            <summary>
+            Gets the display value without unit.
+            </summary>
+            <value>The display value without unit.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.ReportValueWithoutUnit">
+            <summary>
+            Gets the display value without unit.
+            </summary>
+            <value>The display value without unit.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.UnitSymbol">
+            <summary>
+            Gets the unit symbol.
+            </summary>
+            <value>The unit symbol.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.NumericDisplayValue">
+            <summary>
+            Gets the numeric display value of the reading.
+            </summary>
+            <value>The numeric display value of the reading.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.ReportDisplayValue">
+            <summary>
+            Gets DisplayValue for Report.
+            If the currency belongs to UnsupportedCurrencyCodes list,
+            currency symbol is replaced with currency Code.
+            </summary>
+            <value>The report display value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mLinkedValue">
+            <summary>
+            The m converted value name
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.LinkedValue">
+            <summary>
+            Gets or sets the m converted value.
+            </summary>
+            <value>The converted value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mIsValid">
+            <summary>
+            The m is valid
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.IsValid">
+            <summary>
+            Gets or sets the is valid value.
+            </summary>
+            <value>The is valid value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mUnit">
+            <summary>
+            The m unit
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.Unit">
+            <summary>
+            Gets or sets the unit.
+            </summary>
+            <value>The unit.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.mUsageKey">
+            <summary>
+            The m usage key
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.UsageKey">
+            <summary>
+            Gets or sets the usage key.
+            </summary>
+            <value>The usage key.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.PrepareReading(Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter,System.String,Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency,Ecolab.NalcoWater.Azure.Core.Library.Base.Core.UnitsofMeasureSystem)">
+            <summary>
+            Builds the reading.
+            </summary>
+            <param name="parameter">The parameter.</param>
+            <param name="calculatorTypeId">The calculator type id.</param>
+            <param name="currency">The currency.</param>
+            <param name="unitOfMeasure">unit of measure</param>
+            <returns>TcoParameterReading.</returns>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.SetUnit(Ecolab.NalcoWater.Azure.Core.Library.Base.Core.UnitsofMeasureSystem,Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.DimensionalUsageKey)">
+            <summary>
+            Sets the Unit of measure based on user's UOM.
+            </summary>
+            <param name="unitOfMeasure"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.SetDefaultValue(Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter)">
+            <summary>
+            Sets the default value.
+            </summary>
+            <param name="parameter">The parameter.</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading" /> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.DateTime},System.String,Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.SubUnit,Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading" /> class.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <param name="numericValue">The numeric value.</param>
+            <param name="stringValue">The string value.</param>
+            <param name="dateTimeValue">The date time value.</param>
+            <param name="dimensionalUnit">Dimensional unit.</param>
+            <param name="subUnitSelected">Index of the selected subunit.</param>
+            <param name="currency">Currency.</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.DateTime},System.String,System.String,Ecolab.EnvisionPlatform.Library.Model.DimensionalUnit.Currency)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading" /> class.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <param name="numericValue">The numeric value.</param>
+            <param name="stringValue">The string value.</param>
+            <param name="dateTimeValue">The date time value.</param>
+            <param name="dimensionalUnit">The dimensional unit.</param>
+            <param name="selectedSubUnit">The selected sub unit.</param>
+            <param name="currency">The currency.</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameterReading.GetValueInSelectedUnit">
+            <summary>
+            Gets the value in selected unit.
+            </summary>
+            <returns>System.Nullable&lt;System.Double&gt;.</returns>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.Project">
+            <summary>
+            Class Project.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.CreatedBy">
+            <summary>
+            Gets or sets the created by.
+            </summary>
+            <value>The created by.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.CreateById">
+            <summary>
+            Gets or sets the create by identifier.
+            </summary>
+            <value>The create by identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.Facility">
+            <summary>
+            Gets or sets the facility.
+            </summary>
+            <value>The facility.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.FacilityId">
+            <summary>
+            Gets or sets the facility identifier.
+            </summary>
+            <value>The facility identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.LatestVersion">
+            <summary>
+            Gets or sets the latest version.
+            </summary>
+            <value>The latest version.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.PartitionBy">
+            <summary>
+            Gets or sets the partition by.
+            </summary>
+            <value>The partition by.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.StatusType">
+            <summary>
+            Gets or sets the type of the status.
+            </summary>
+            <value>The type of the status.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.Project"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.Project.#ctor(System.Guid,System.String,Ecolab.NalcoWater.Azure.Core.Library.Model.Core.Community.User,System.Int32,Ecolab.EnvisionPlatform.Library.Model.Hierarchy.DisplayFacility,System.Int32,System.Guid,Ecolab.EnvisionPlatform.Library.Base.Tco.StatusType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.Project"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="name">The name.</param>
+            <param name="createdBy">The created by.</param>
+            <param name="createdById">The created by identifier.</param>
+            <param name="facility">The facility.</param>
+            <param name="facilityId">The facility identifier.</param>
+            <param name="latestVersion">The latest version.</param>
+            <param name="statusType">The status type.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup">
+            <summary>
+            Class Setup.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.CalculatorType">
+            <summary>
+            Gets or sets the type of the calculator.
+            </summary>
+            <value>The type of the calculator.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.ParameterCalculations">
+            <summary>
+            Gets or sets the type of the parameter calculations.
+            </summary>
+            <value>The parameter calculations.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.Generic">
+            <summary>
+            Gets or sets the generic.
+            </summary>
+            <value>The generic.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.Current">
+            <summary>
+            Gets or sets the current.
+            </summary>
+            <value>The current.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.Proposed">
+            <summary>
+            Gets or sets the proposed.
+            </summary>
+            <value>The proposed.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.Savings">
+            <summary>
+            Gets or sets the savings.
+            </summary>
+            <value>The savings.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.Charts">
+            <summary>
+            Gets or sets the charts.
+            </summary>
+            <value>The charts.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.Tiles">
+            <summary>
+            Gets or sets the tiles.
+            </summary>
+            <value>The tiles.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.ReportDetails">
+            <summary>
+            Parameter Description
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.ContextPoints">
+            <summary>
+            Gets or sets the ContextPoints
+            </summary>
+            <value>ContextPoints</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.#ctor(Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoChart},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ParameterGroup},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.ContextPointSetup},System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Tco.TcoCalculation})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup"/> class.
+            </summary>
+            <param name="calculatorType">Type of the calculator.</param>
+            <param name="generic">The generic.</param>
+            <param name="current">The current.</param>
+            <param name="proposed">The proposed.</param>
+            <param name="savings">The savings.</param>
+            <param name="charts">The charts.</param>
+            <param name="tiles">The tiles.</param>
+            <param name="reportDetails">Parameter Description</param>
+            <param name="contextPoints">Parameter ContextPoint</param>
+             <param name="parameterCalculations">Parameter ContextPoint</param>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.Setup.Init(System.String)">
+            <summary>
+            Initializes the specified calculator type identifier.
+            </summary>
+            <param name="calculatorTypeId">The calculator type identifier.</param>
+            <returns>Setup.</returns>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType">
+            <summary>
+            Class CalculatorType.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType.Label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType.ResourceKey">
+            <summary>
+            Gets or sets the resource key.
+            </summary>
+            <value>The resource key.</value>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType.Assets">
+            <summary>
+            Gets or sets the assets.
+            </summary>
+            <value>The assets.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType"/> class.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{Ecolab.EnvisionPlatform.Library.Model.Hierarchy.Asset})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.CalculatorType"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="label">The label.</param>
+            <param name="resourceKey">The resource key.</param>
+            <param name="assets">The assets.</param>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile">
+            <summary>
+            Class TcoTile.
+            </summary>
+            <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+        </member>
+        <member name="E:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.PropertyChanged">
+            <summary>
+            Occurs when [property changed].
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.OnPropertyChanged(System.String)">
+            <summary>
+            Called when [property changed].
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.mName">
+            <summary>
+            The m name
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.mTileType">
+            <summary>
+            The m tile type
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.TileType">
+            <summary>
+            Gets or sets the type of the tile.
+            </summary>
+            <value>The type of the tile.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.mTopValue">
+            <summary>
+            The m top value
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.TopValue">
+            <summary>
+            Gets or sets the top value.
+            </summary>
+            <value>The top value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.mBottomValue">
+            <summary>
+            The m bottom value
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.BottomValue">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="F:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.mPercent">
+            <summary>
+            The m percent
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.Percent">
+            <summary>
+            Gets or sets the percent.
+            </summary>
+            <value>The percent.</value>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile.#ctor(System.String,Ecolab.EnvisionPlatform.Library.Base.Tco.TileType,Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter,Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter,Ecolab.EnvisionPlatform.Library.Model.Tco.TcoParameter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ecolab.EnvisionPlatform.Library.Model.Tco.TcoTile" /> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="tileType">Type of the tile.</param>
+            <param name="topValue">The top value.</param>
+            <param name="percent">The percent.</param>
+            <param name="bottomValue">The bottom value.</param>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment.PartitionBy">
+            <summary>
+            For DocumentDB partitioning - managed by server.
+            </summary>
+        </member>
+        <member name="M:Ecolab.EnvisionPlatform.Library.Model.Tpa.Assessment.Init(System.Int64)">
+            <summary>
+            Initialize a completely new assessment, or ensure that an existing assessment is properly initialized after deserialization.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tpa.Phase">
+            <summary>
+            The sheets in an assessment phase.
+            </summary>
+        </member>
+        <member name="T:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.PhaseAssessment">
+            <summary>
+              Looks up a localized string similar to Assessment.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.PhasePlanning">
+            <summary>
+              Looks up a localized string similar to Planning.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.PhasePostAssessment">
+            <summary>
+              Looks up a localized string similar to Post-Assessment.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.PhasePreAssessment">
+            <summary>
+              Looks up a localized string similar to Pre-Assessment.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetBackground">
+            <summary>
+              Looks up a localized string similar to Background.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetChecklist">
+            <summary>
+              Looks up a localized string similar to Assessment Checklist.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetDataFile">
+            <summary>
+              Looks up a localized string similar to Data File.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetElectricalData">
+            <summary>
+              Looks up a localized string similar to Electrical Data.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetEnvironmental">
+            <summary>
+              Looks up a localized string similar to Environmental.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetExecutiveSummary">
+            <summary>
+              Looks up a localized string similar to Executive Summary.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetFuelBalance">
+            <summary>
+              Looks up a localized string similar to Fuel Balance.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetFuelData">
+            <summary>
+              Looks up a localized string similar to Fuel Data.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetMassBalance">
+            <summary>
+              Looks up a localized string similar to Mass Balance.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetMethodology">
+            <summary>
+              Looks up a localized string similar to Methodology.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetOpportunities">
+            <summary>
+              Looks up a localized string similar to Opportunities.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetPackaging">
+            <summary>
+              Looks up a localized string similar to Packaging.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetPlantInformation">
+            <summary>
+              Looks up a localized string similar to Plant Information.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetPlantMetrics">
+            <summary>
+              Looks up a localized string similar to Plant Metrics.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetProdMassBalance">
+            <summary>
+              Looks up a localized string similar to Production Mass Balance.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetProduction">
+            <summary>
+              Looks up a localized string similar to Production.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetQualityData">
+            <summary>
+              Looks up a localized string similar to Quality Data.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetQuestionnaire">
+            <summary>
+              Looks up a localized string similar to Questionnaire.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetRequest">
+            <summary>
+              Looks up a localized string similar to Request.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetResultsSummary">
+            <summary>
+              Looks up a localized string similar to Results Summary.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetTeam">
+            <summary>
+              Looks up a localized string similar to Team.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetUtilities">
+            <summary>
+              Looks up a localized string similar to Utilities.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetWasteData">
+            <summary>
+              Looks up a localized string similar to Waste Data.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetWaterBalance">
+            <summary>
+              Looks up a localized string similar to Water Balance.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetWaterData">
+            <summary>
+              Looks up a localized string similar to Water Data.
+            </summary>
+        </member>
+        <member name="P:Ecolab.EnvisionPlatform.Library.Model.Tpa.TpaResources.SheetWaterfalls">
+            <summary>
+              Looks up a localized string similar to Waterfalls.
+            </summary>
+        </member>
+    </members>
+</doc>
